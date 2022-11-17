@@ -1,19 +1,14 @@
- //Find Factorial
- 
- #include<stdio.h>  
- int main()    
-{    
-    int i,fact=1,n;  
+#include<stdio.h>
+void main()
+{
+    int i,num,fact=1;
+    printf("Enter number=");
+    scanf("%d",&num);
+    for (i=1;i<=num;i++)
+    {
+        fact=fact*i;
+    }
+    printf("The factorial number is %d",fact);
+    return 0;
+}
 
-        printf("Enter a number: ");    
-        scanf("%d",&n); 
-
-    for(i=1;i<=n;i++)
-
-    {    
-      fact=fact*i;    
-    }    
-        printf("Factorial of %d is: %d",n,fact);    
-        
-        return 0;  
-}   
